@@ -1,1 +1,95 @@
 /* start of my CSS file for my portfolio*/
+body{
+    background-color: #727772;
+    margin: 0;
+}
+.inline-block{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: #373738;
+    font-family:serif;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.Logo{
+    float: left;
+    padding: 10px 0;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+nav ul > li > a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+nav ul > li > a:hover{
+    color: #33D0B3;
+    font-weight: bold;
+}
+nav ul > li > a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #33D0B3;
+    
+    position: relative;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav ul > li > a:hover::before{
+    width: 100%;
+}
+.heroImg{
+    height: 600px;
+    padding: 25px;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+}
+footer{
+    background-color: #373738;
+}
+.footer-menu-outer{
+    display: flex;
+    justify-content: center;
+    min-height: 5vh;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 200px;
+} 
+.copyright{
+    text-align: center;
+    padding-top: 50px;
+}
